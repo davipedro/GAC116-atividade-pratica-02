@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-BR" class="scroll-smooth" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio pessoal de Davi Pedro da Silva, desenvolvedor web e estudante de Sistemas de Informação.">
+  <title>Portfólio — Davi Pedro da Silva | Tailwind CSS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { heading: ['Oswald', 'sans-serif'], mono: ['Space Mono', 'monospace'] },
+          colors: {
+            'brand-black': 'rgb(var(--brand-black) / <alpha-value>)',
+            'brand-white': 'rgb(var(--brand-white) / <alpha-value>)',
+            'brand-gray': 'rgb(var(--brand-gray) / <alpha-value>)',
+            'brand-dark-gray': 'rgb(var(--brand-dark-gray) / <alpha-value>)',
+            'brand-border': 'rgb(var(--brand-border) / <alpha-value>)'
+          },
+          letterSpacing: { widest: '.25em' }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="font-mono antialiased selection:bg-brand-white selection:text-brand-black">
+  <div class="toolbar fixed top-3 right-3 md:top-6 md:right-8 z-50 flex items-center gap-1 text-[10px] uppercase tracking-widest bg-brand-black/90 backdrop-blur-sm p-1 rounded border border-brand-border" role="group" aria-label="Controles do portfólio">
+    <span class="px-2 py-1.5 rounded bg-brand-white text-brand-black font-bold" aria-current="page">Tailwind</span>
+    <a href="../bootstrap/index.html" class="px-2 py-1.5 text-brand-gray hover:text-brand-white transition-colors">Bootstrap</a>
+    <button class="theme-toggle px-2 py-1.5 rounded border border-brand-border text-brand-white hover:bg-brand-white hover:text-brand-black transition-colors" type="button" data-theme-toggle aria-pressed="true" aria-label="Alternar tema. Tema atual: escuro.">
+      <span aria-hidden="true">◐</span> <span data-theme-label>Escuro</span>
+    </button>
+  </div>
+  <div class="noise-bg" aria-hidden="true"></div>
+  <div class="container mx-auto px-6 py-8 md:px-12 md:py-12 flex flex-col content-z max-w-7xl">
+    <header class="flex flex-col md:flex-row justify-between items-start md:items-center w-full mb-16 md:mb-24">
+      <a href="#top" class="font-heading font-bold text-2xl tracking-wider text-brand-white mb-6 md:mb-0 hover:opacity-80 transition-opacity">DEV.PORTFÓLIO</a>
+      <nav class="w-full md:w-auto overflow-x-auto pb-4 md:pb-0" aria-label="Navegação principal">
+        <ul class="flex space-x-6 md:space-x-8 text-xs text-brand-gray whitespace-nowrap uppercase tracking-widest">
+          <li><a href="#experience" class="nav-link"><span class="text-brand-dark-gray mr-1">01/</span>Experiência</a></li>
+          <li><a href="#education" class="nav-link"><span class="text-brand-dark-gray mr-1">02/</span>Formação</a></li>
+          <li><a href="#skills" class="nav-link"><span class="text-brand-dark-gray mr-1">03/</span>Competências</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="top" class="min-h-[70vh] flex flex-col justify-center relative w-full mb-24 md:mb-32">
+      <div class="relative pl-4 md:pl-8 mb-16">
+        <div class="accent-line" aria-hidden="true"></div>
+        <h1 class="font-heading font-bold uppercase leading-none text-[14vw] md:text-[10vw] tracking-tighter text-brand-white m-0 p-0">
+          Full Stack <span class="block text-brand-gray">Developer</span>
+        </h1>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 w-full mt-auto mb-12">
+        <div class="md:col-span-4 flex flex-col justify-end">
+          <p class="text-brand-gray text-xs md:text-sm uppercase tracking-widest">// SOLUÇÕES WEB &amp; IA.</p>
+        </div>
+        <div class="md:col-span-8 flex justify-end">
+          <div class="profile-block">
+            <img src="../assets/photo.png" alt="Foto de Davi Pedro da Silva" class="profile-photo" width="88" height="88" decoding="async">
+            <div class="profile-copy">
+              <p class="text-brand-white text-xs md:text-sm mb-3 uppercase tracking-widest">Davi Pedro / Desenvolvedor</p>
+              <p class="text-brand-gray text-xs md:text-sm leading-relaxed max-w-sm">Desenvolvedor focado em criar aplicações escaláveis, criativas e eficientes. Experiência em desenvolvimento web e IA Agents.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 md:mt-0">
+        <a href="#experience" class="inline-flex items-center text-xs text-brand-white uppercase tracking-widest hover:text-brand-gray transition-colors group">
+          Explorar trajetória
+          <svg class="w-3 h-3 ml-2 transform group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0-7-7m7 7V3"></path></svg>
+        </a>
+      </div>
+    </main>
+
+    <section id="experience" class="w-full py-20 md:py-32 border-t border-brand-border scroll-mt-8">
+      <h2 class="font-heading font-bold text-2xl md:text-4xl text-brand-white uppercase mb-12 md:mb-16 flex items-center tracking-wider"><span class="text-brand-gray mr-4 text-lg md:text-2xl">01/</span> Experiência Profissional</h2>
+      <div class="flex flex-col">
+        <article class="experience-item border-b border-brand-border py-8 flex flex-col md:flex-row md:justify-between md:items-center">
+          <div><h3 class="text-brand-white text-xl uppercase tracking-wider mb-2 font-heading">Web Developer <img src="../assets/portugal.svg" alt="Bandeira de Portugal" class="flag-icon" width="28" height="20"></h3><p class="text-brand-gray text-sm tracking-widest uppercase">Inovcorp · Tempo integral</p></div>
+          <p class="text-brand-gray text-xs tracking-widest mt-4 md:mt-0 uppercase text-left md:text-right">Jan 2026 — Presente<br><span class="text-brand-dark-gray">Remoto</span></p>
+        </article>
+        <article class="experience-item border-b border-brand-border py-8 flex flex-col md:flex-row md:justify-between md:items-center">
+          <div><h3 class="text-brand-white text-xl uppercase tracking-wider mb-2 font-heading">Desenvolvedor Full Stack <img src="../assets/brasil.svg" alt="Bandeira do Brasil" class="flag-icon" width="28" height="20"></h3><p class="text-brand-gray text-sm tracking-widest uppercase">GAFIT · Estágio</p></div>
+          <p class="text-brand-gray text-xs tracking-widest mt-4 md:mt-0 uppercase text-left md:text-right">Nov 2024 — Jan 2026<br><span class="text-brand-dark-gray">Remoto</span></p>
+        </article>
+        <article class="experience-item border-b border-brand-border py-8 flex flex-col md:flex-row md:justify-between md:items-center">
+          <div><h3 class="text-brand-white text-xl uppercase tracking-wider mb-2 font-heading">Desenvolvedor Full Stack <img src="../assets/brasil.svg" alt="Bandeira do Brasil" class="flag-icon" width="28" height="20"></h3><p class="text-brand-gray text-sm tracking-widest uppercase">Emakers Jr (Empresa Júnior) · Estágio</p></div>
+          <p class="text-brand-gray text-xs tracking-widest mt-4 md:mt-0 uppercase text-left md:text-right">Jun 2024 — Fev 2025<br><span class="text-brand-dark-gray">Lavras, MG · Remoto</span></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="education" class="w-full py-20 border-t border-brand-border scroll-mt-8">
+      <h2 class="font-heading font-bold text-2xl md:text-4xl text-brand-white uppercase mb-12 md:mb-16 flex items-center tracking-wider"><span class="text-brand-gray mr-4 text-lg md:text-2xl">02/</span> Formação Acadêmica</h2>
+      <article class="py-4 flex flex-col md:flex-row md:justify-between md:items-center">
+        <div><h3 class="text-brand-white text-xl uppercase tracking-wider mb-2 font-heading">Bacharelado, Sistemas de Informação</h3><p class="text-brand-gray text-sm tracking-widest uppercase">Universidade Federal de Lavras (UFLA)</p></div>
+        <p class="text-brand-gray text-xs tracking-widest mt-4 md:mt-0 uppercase text-left md:text-right">Out 2022 — Jun 2026</p>
+      </article>
+    </section>
+
+    <section id="skills" class="w-full py-20 md:py-32 border-t border-brand-border scroll-mt-8">
+      <h2 class="font-heading font-bold text-2xl md:text-4xl text-brand-white uppercase mb-12 md:mb-16 flex items-center tracking-wider"><span class="text-brand-gray mr-4 text-lg md:text-2xl">03/</span> Competências Técnicas</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div><h3 class="text-brand-white text-sm uppercase tracking-widest border-b border-brand-border pb-2 mb-6">Stack Principal (Web)</h3><ul class="space-y-4 text-brand-gray text-sm"><li>/ PHP</li><li>/ Laravel</li><li>/ Vue.js</li><li>/ JavaScript &amp; HTML</li></ul></div>
+        <div><h3 class="text-brand-white text-sm uppercase tracking-widest border-b border-brand-border pb-2 mb-6">Backend &amp; IA</h3><ul class="space-y-4 text-brand-gray text-sm"><li>/ Java &amp; Spring Boot</li><li>/ React Native</li><li>/ API REST</li><li>/ Programação Orientada a Objetos</li></ul></div>
+        <div><h3 class="text-brand-white text-sm uppercase tracking-widest border-b border-brand-border pb-2 mb-6">Ferramentas &amp; Dados</h3><ul class="space-y-4 text-brand-gray text-sm"><li>/ Bancos de Dados Relacionais &amp; SQL</li><li>/ Git &amp; Controle de Versão</li><li>/ Docker &amp; Linux</li><li>/ Inglês (B2)</li></ul></div>
+      </div>
+    </section>
+
+    <footer class="w-full py-12 border-t border-brand-border flex flex-col md:flex-row justify-between items-center text-xs text-brand-gray tracking-widest uppercase mt-12">
+      <p>&copy; 2026 Davi Pedro da Silva.</p><p class="mt-4 md:mt-0">Desenvolvido com Tailwind CSS.</p>
+    </footer>
+  </div>
+  <script src="../assets/js/theme.js" defer></script>
+</body>
+</html>
+

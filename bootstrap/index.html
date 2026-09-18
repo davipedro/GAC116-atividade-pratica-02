@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio pessoal de Davi Pedro da Silva, desenvolvedor web e estudante de Sistemas de Informação.">
+  <title>Portfólio — Davi Pedro da Silva | Bootstrap</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="font-monospace">
+  <div class="toolbar position-fixed top-0 end-0 z-3 d-flex align-items-center gap-1 m-3 p-1 rounded border" role="group" aria-label="Controles do portfólio">
+    <a href="../tailwind/index.html" class="toolbar-link">Tailwind</a>
+    <span class="toolbar-current" aria-current="page">Bootstrap</span>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="true" aria-label="Alternar tema. Tema atual: escuro."><span aria-hidden="true">◐</span> <span data-theme-label>Escuro</span></button>
+  </div>
+  <div class="noise-bg" aria-hidden="true"></div>
+  <div class="container-xl px-4 px-md-5 py-4 py-md-5 content-z">
+    <header class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-5 mb-md-5">
+      <a href="#top" class="brand-mark mb-4 mb-md-0">DEV.PORTFÓLIO</a>
+      <nav class="site-nav overflow-x-auto pb-3 pb-md-0" aria-label="Navegação principal">
+        <ul class="d-flex gap-4 gap-md-5 list-unstyled mb-0 text-uppercase small tracking-wide text-nowrap">
+          <li><a href="#experience" class="nav-link-custom"><span class="text-brand-dark-gray me-1">01/</span>Experiência</a></li>
+          <li><a href="#education" class="nav-link-custom"><span class="text-brand-dark-gray me-1">02/</span>Formação</a></li>
+          <li><a href="#skills" class="nav-link-custom"><span class="text-brand-dark-gray me-1">03/</span>Competências</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="top" class="hero d-flex flex-column justify-content-center mb-5 mb-md-5">
+      <div class="headline-wrap position-relative ps-3 ps-md-4 mb-5">
+        <div class="accent-line" aria-hidden="true"></div>
+        <h1 class="display-title text-uppercase mb-0">Full Stack <span class="d-block text-brand-gray">Developer</span></h1>
+      </div>
+      <div class="row g-4 align-items-end mb-4">
+        <div class="col-12 col-md-4"><p class="small text-uppercase tracking-wide text-brand-gray mb-0">// SOLUÇÕES WEB &amp; IA.</p></div>
+        <div class="col-12 col-md-8">
+          <div class="profile-block">
+            <img src="../assets/photo.png" alt="Foto de Davi Pedro da Silva" class="profile-photo" width="88" height="88" decoding="async">
+            <div class="profile-copy">
+              <p class="small text-uppercase tracking-wide text-brand-white mb-3">Davi Pedro / Desenvolvedor</p>
+              <p class="small lh-lg text-brand-gray mb-0">Desenvolvedor focado em criar aplicações escaláveis, criativas e eficientes. Experiência em desenvolvimento web e IA Agents.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#experience" class="explore-link text-uppercase small tracking-wide mt-3">Explorar trajetória <span aria-hidden="true">↓</span></a>
+    </main>
+
+    <section id="experience" class="section-block py-5 py-md-5 scroll-mt">
+      <h2 class="section-title text-uppercase mb-4 mb-md-5"><span class="text-brand-gray me-3">01/</span>Experiência Profissional</h2>
+      <div>
+        <article class="experience-item d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 py-4 border-bottom">
+          <div><h3 class="item-title text-uppercase mb-2">Web Developer <img src="../assets/portugal.svg" alt="Bandeira de Portugal" class="flag-icon" width="28" height="20"></h3><p class="small text-uppercase tracking-wide text-brand-gray mb-0">Inovcorp · Tempo integral</p></div>
+          <p class="small text-uppercase tracking-wide text-brand-gray mb-0 text-md-end">Jan 2026 — Presente<br><span class="text-brand-dark-gray">Remoto</span></p>
+        </article>
+        <article class="experience-item d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 py-4 border-bottom">
+          <div><h3 class="item-title text-uppercase mb-2">Desenvolvedor Full Stack <img src="../assets/brasil.svg" alt="Bandeira do Brasil" class="flag-icon" width="28" height="20"></h3><p class="small text-uppercase tracking-wide text-brand-gray mb-0">GAFIT · Estágio</p></div>
+          <p class="small text-uppercase tracking-wide text-brand-gray mb-0 text-md-end">Nov 2024 — Jan 2026<br><span class="text-brand-dark-gray">Remoto</span></p>
+        </article>
+        <article class="experience-item d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 py-4 border-bottom">
+          <div><h3 class="item-title text-uppercase mb-2">Desenvolvedor Full Stack <img src="../assets/brasil.svg" alt="Bandeira do Brasil" class="flag-icon" width="28" height="20"></h3><p class="small text-uppercase tracking-wide text-brand-gray mb-0">Emakers Jr (Empresa Júnior) · Estágio</p></div>
+          <p class="small text-uppercase tracking-wide text-brand-gray mb-0 text-md-end">Jun 2024 — Fev 2025<br><span class="text-brand-dark-gray">Lavras, MG · Remoto</span></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="education" class="section-block py-5 scroll-mt">
+      <h2 class="section-title text-uppercase mb-4 mb-md-5"><span class="text-brand-gray me-3">02/</span>Formação Acadêmica</h2>
+      <article class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 py-3">
+        <div><h3 class="item-title text-uppercase mb-2">Bacharelado, Sistemas de Informação</h3><p class="small text-uppercase tracking-wide text-brand-gray mb-0">Universidade Federal de Lavras (UFLA)</p></div>
+        <p class="small text-uppercase tracking-wide text-brand-gray mb-0 text-md-end">Out 2022 — Jun 2026</p>
+      </article>
+    </section>
+
+    <section id="skills" class="section-block py-5 py-md-5 scroll-mt">
+      <h2 class="section-title text-uppercase mb-4 mb-md-5"><span class="text-brand-gray me-3">03/</span>Competências Técnicas</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-5">
+        <div class="col"><h3 class="skill-heading text-uppercase small tracking-wide pb-2 mb-4">Stack Principal (Web)</h3><ul class="list-unstyled skill-list text-brand-gray"><li> / PHP</li><li> / Laravel</li><li> / Vue.js</li><li> / JavaScript &amp; HTML</li></ul></div>
+        <div class="col"><h3 class="skill-heading text-uppercase small tracking-wide pb-2 mb-4">Backend &amp; IA</h3><ul class="list-unstyled skill-list text-brand-gray"><li> / Java &amp; Spring Boot</li><li> / React Native</li><li> / API REST</li><li> / Programação Orientada a Objetos</li></ul></div>
+        <div class="col"><h3 class="skill-heading text-uppercase small tracking-wide pb-2 mb-4">Ferramentas &amp; Dados</h3><ul class="list-unstyled skill-list text-brand-gray"><li> / Bancos de Dados Relacionais &amp; SQL</li><li> / Git &amp; Controle de Versão</li><li> / Docker &amp; Linux</li><li> / Inglês (B2)</li></ul></div>
+      </div>
+    </section>
+
+    <footer class="site-footer d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 py-5 mt-4 border-top text-uppercase small tracking-wide text-brand-gray">
+      <p class="mb-0">&copy; 2026 Davi Pedro da Silva.</p><p class="mb-0">Desenvolvido com Bootstrap.</p>
+    </footer>
+  </div>
+  <script src="../assets/js/theme.js" defer></script>
+</body>
+</html>
+
